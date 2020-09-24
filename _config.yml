@@ -1,0 +1,41 @@
+# Site
+name: 'Tensor Troubles'
+description: 'Just a blog about math.'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: ''
+
+include: ["_pages"]
+permalink: /:title/
+
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+authors:
+    johnpiwinski:
+      name: John Piwinski
+      avatar: assets/images/avatar1.jpg
+      bio: "Interested in fluid dynamics."
+      email: johnpiwinski@protonmail.ch 
+ 
+defaults:
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: johnpiwinski
+      avatar: /assets/images/avatar1.jpg
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+markdown: kramdown
+highlighter: rouge
+
+paginate: 10
+
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
