@@ -1,1 +1,1 @@
-Sitemap: /TensorTroubles/sitemap.xml
+Sitemap: /sitemap.xml
